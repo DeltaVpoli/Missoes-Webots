@@ -1,0 +1,55 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "../protos/Figura.proto"
+EXTERNPROTO "../protos/Trelica.proto"
+EXTERNPROTO "../protos/LinhaCurva.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.19323279350334488 0.1845959581714227 -0.9636313712938511 1.6534600096606864
+  position -0.5268048938000287 20.527239786010504 7.421218225861625
+}
+TexturedBackground {
+  texture "noon_park_empty"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0.68 -0.05
+  floorSize 8 15
+  floorAppearance Parquetry {
+    type "dark strip"
+    colorOverride 0 1 0
+  }
+}
+Floor {
+  rotation 0 0 1 1.5707963267948966
+  size 200 200
+  tileSize 1 1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://github.com/cyberbotics/pit-escape-competition/blob/main/worlds/textures/fine_grained_sand.jpg?raw=true"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+Trelica {
+  translation -1.12 0 0
+}
+LinhaCurva {
+  translation 2.98997 5 0.01
+  rotation -0.28108510281603044 0.6785972482190434 0.6785992482197749 -2.593565307179586
+}
+Figura {
+  translation 3.42126 5.05259 0.01
+  size 1
+}

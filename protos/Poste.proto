@@ -1,0 +1,41 @@
+#VRML_SIM R2025a utf8
+# Obstaculo da missão Slalom.
+
+
+PROTO Poste [
+  field SFString{"preto", "azul", "vermelho", "rosa"}
+                   color      "vermelho"
+  field SFString   name "Obstaculo"
+  field SFVec3f    translation 0. 0. 1.25
+]
+{
+%<
+// Setting object size constant
+const height = 2.5;
+const radius = 0.05;
+// Predefined color set
+const color = fields.color.value;
+let color_str = "0 0 0";
+if(color === "preto"   ){ color_str = "0 0 0"; }
+if(color === "azul"    ){ color_str = "0 0 1"; }
+if(color === "vermelho"){ color_str = "1 0 0"; }
+if(color === "rosa"    ){ color_str = "1 0.3 1"; }
+>%
+  Solid {
+    translation IS translation
+    name IS name
+    children [
+      Shape {
+        appearance PBRAppearance {
+          baseColor %<= color_str >%
+          metalness 0
+        }
+        geometry DEF OBS_GEOM Cylinder {
+          height %<= height >%
+          radius %<= radius >%
+        }
+      }
+     ]
+     boundingObject USE OBS_GEOM
+  }
+}

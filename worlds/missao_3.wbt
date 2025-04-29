@@ -1,0 +1,82 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "../protos/Figura.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.01373233828510948 -0.9976082432544474 0.06774375156424793 5.882251768630398
+  position -19.45393907272877 1.2568612329109055 8.448404283490204
+}
+TexturedBackground {
+  texture "noon_park_empty"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0.68 -0.01
+  floorSize 8 15
+  floorAppearance Parquetry {
+    type "dark strip"
+    colorOverride 0 1 0
+  }
+}
+Floor {
+  translation 0 0 -0.01
+  rotation 0 0 1 1.5707963267948966
+  size 200 200
+  tileSize 1 1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://github.com/cyberbotics/pit-escape-competition/blob/main/worlds/textures/fine_grained_sand.jpg?raw=true"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+Figura {
+  name "Circulo"
+  translation -0.287308 2.03269 -7.10543e-15
+}
+Figura {
+  figura "casa"
+  name "Casa"
+  translation 0.528444 6.22986 -3.55271e-15
+}
+Figura {
+  figura "cruz"
+  name "Cruz"
+  translation 1.9412 0.163573 -6.21725e-14
+}
+Figura {
+  figura "estrela"
+  name "Estrela"
+  translation 2.29999 4.02656 0
+}
+Figura {
+  figura "hexagono"
+  name "Hexagono"
+  translation -1.79603 3.80541 -3.55271e-15
+}
+Figura {
+  figura "pentagono"
+  name "Pentagono"
+  translation -1.93737 -1.47619 -5.32907e-15
+}
+Figura {
+  figura "quadrado"
+  name "Quadrado"
+  translation 0.945522 -4.17222 -1.19016e-13
+}
+Figura {
+  figura "triangulo"
+  name "Triangulo"
+  translation 1.17988 -1.73896 -1.77635e-15
+}

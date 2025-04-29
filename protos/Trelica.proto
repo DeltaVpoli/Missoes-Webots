@@ -1,0 +1,56 @@
+#VRML_SIM R2025a utf8
+# Trelica missão 2
+
+PROTO Trelica [
+  field SFVec3f    translation 0. 0. 0.
+]
+{
+	Pose {
+		translation IS translation
+		children [
+		  Solid {
+		    translation -1 0 1
+		    children [
+		      DEF TRAVE_SHAPE Shape {
+		        appearance Appearance {
+		          material Material {
+		            diffuseColor 0.6 0.6 0.6
+		          }
+		        }
+		        geometry DEF TRAVE_BOX Box {
+		          size 0.3 0.3 2
+		        }
+		      }
+		    ]
+		    name "trave_esq"
+		    boundingObject USE TRAVE_BOX
+		  }
+		  Solid {
+		    translation 1 0 1
+		    children [
+		      USE TRAVE_SHAPE
+		    ]
+		    name "trave_dir"
+		    boundingObject USE TRAVE_BOX
+		  }
+		  Solid {
+		    translation -1.57945e-06 0.03 1.95
+		    rotation 0 1 0 1.5708
+		    children [
+		      Shape {
+		        appearance PBRAppearance {
+		          baseColor 1 0 0
+		          roughness 1
+		          metalness 0
+		        }
+		        geometry DEF MANG_CYL Cylinder {
+		          radius 0.05
+		        }
+		      }
+		    ]
+		    name "mangueira"
+		    boundingObject USE MANG_CYL
+		  }
+		]
+	}
+}
