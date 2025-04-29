@@ -1,0 +1,113 @@
+#VRML_SIM R2025a utf8
+# Describe the functionality of your PROTO here.
+
+
+PROTO TRAVES_MISSAO1 [
+  field SFVec3f azul_transl 2 2.6 1.25 # MUDA A DIREÇAO DA BARRA (X,Y,Z)
+  field SFColor color_azul 0 0 1
+  
+  field SFVec3f    preta_transl  0.6 -3.8 1.25
+  field SFColor  color_preta   0 0 0
+  
+  field SFVec3f    rosa_transl  -0.3 -0.5 1.25
+  field SFColor  color_rosa  1 0.3 1
+  
+  field SFVec3f    vermelha_transl  0.55 4.9 1.25
+  field SFColor  color_vermelha  1 0 0
+  
+  field SFVec3f size_box 0.2 0.2 2.5
+ ]
+{
+  Solid {
+    children [
+      
+      # Trave azul
+      Solid {
+        translation IS azul_transl
+        name "azul"
+            children [
+                Shape {
+                 appearance PBRAppearance {
+                   baseColor IS color_azul
+                    metalness 0
+              }
+                 geometry Cylinder {
+                   height 2.5
+                   radius 0.05
+          }
+        }
+     ]
+     boundingObject Box {
+          size IS size_box
+       }
+        
+      }
+      
+      # Trave preta
+      Solid {
+        translation IS preta_transl
+        name "preta"
+            children [
+                Shape {
+                 appearance PBRAppearance {
+                   baseColor IS color_preta
+                    metalness 0
+              }
+                 geometry Cylinder {
+                   height 2.5
+                   radius 0.05
+          }
+        }
+     ]
+     boundingObject Box {
+          size IS size_box
+       }
+      }
+
+       # Trave rosa
+      Solid {
+        translation IS rosa_transl
+        name "rosa"
+            children [
+                Shape {
+                 appearance PBRAppearance {
+                   baseColor IS color_rosa
+                    metalness 0
+              }
+                 geometry Cylinder {
+                   height 2.5
+                   radius 0.05
+          }
+        }
+     ]
+     boundingObject Box {
+          size IS size_box
+       }
+      }
+      
+        # Trave vermelha
+      Solid {
+        translation IS vermelha_transl
+        name "vermelha"
+            children [
+                Shape {
+                 appearance PBRAppearance {
+                   baseColor IS color_vermelha
+                    metalness 0
+              }
+                 geometry Cylinder {
+                   height 2.5
+                   radius 0.05
+          }
+        }
+     ]
+     boundingObject Box {
+          size IS size_box
+       }
+      }
+    ]
+
+
+
+}
+}
