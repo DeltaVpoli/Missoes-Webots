@@ -1,0 +1,231 @@
+#VRML_SIM R2025a utf8
+# Describe the functionality of your PROTO here.
+
+
+PROTO IMAGENS_MISSAO3 [
+    field SFVec3f size 1 1 0.08 #size para o bounding
+    field SFVec3f size_box 0.8 0.8 0.03
+    field SFVec3f quadrado_transl 1.52 -4.1 0
+    field SFVec3f triangulo_transl -2.5 4.5 0
+    field SFVec3f casa_transl 1.93 -1.68 0 ##
+    field SFVec3f pentagono_transl -3.1 1.1 0
+    field SFVec3f hexagono_transl 0 0 0
+    field SFVec3f cruz_transl 2.6 6.14 0
+    field SFVec3f circulo_transl 1.55 4.15 0
+    field SFVec3f estrela_transl -2 -4.5 0
+]
+{
+  Solid {
+    children [
+    
+      # Triângulo
+      Solid {
+        translation IS triangulo_transl
+        name "triangulo"
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.3 0.4 0.9
+              }
+              texture ImageTexture {
+                url [
+                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Triangulo_ficaclaro.png?raw=true"
+                ]
+              }
+            }
+            geometry Box {
+              size IS size_box
+            }
+          }
+        ]
+        boundingObject Box {
+          size IS size
+        }
+      }
+
+      # Quadrado
+      Solid {
+        translation IS quadrado_transl
+        name "quadrado"
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.3 0.4 0.9
+              }
+              texture ImageTexture {
+                url [
+                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Quadrado.png?raw=true"
+                ]
+              }
+            }
+            geometry Box {
+              size IS size_box
+            }
+          }
+        ]
+        boundingObject Box {
+          size IS size
+        }
+      }
+      
+      # Casa
+      Solid {
+          name "casa"
+          translation IS casa_transl
+          children [
+              Shape {
+                appearance Appearance{
+                   material Material {
+                      diffuseColor 0.3 0.4 0.9
+                      }
+                  texture ImageTexture {
+                    url [
+                      "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Casa_ficaamarelo.png?raw=true"
+                    ]
+                  }
+          }
+  
+         geometry Box {
+           size IS size_box
+          }
+        }
+     ]
+     boundingObject Box {
+          size IS size
+       }
+        
+      }
+      
+       # Pentagono
+      Solid {
+        translation IS pentagono_transl
+        name "pentagono"
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.3 0.4 0.9
+              }
+              texture ImageTexture {
+                url [
+                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Pentagono_corhexag.png?raw=true"
+                ]
+              }
+            }
+            geometry Box {
+              size IS size_box
+            }
+          }
+        ]
+        boundingObject Box {
+          size IS size
+        }
+      }
+      
+      # Hexagono
+      Solid {
+        translation IS hexagono_transl
+        name "hexagono"
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.3 0.4 0.9
+              }
+              texture ImageTexture {
+                url [
+                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Hexagono.png?raw=true"
+                ]
+              }
+            }
+            geometry Box {
+              size IS size_box
+            }
+          }
+        ]
+        boundingObject Box {
+          size IS size
+        }
+       }
+       
+       # Cruz
+       Solid {
+        translation IS cruz_transl
+        name "Cruz"
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.3 0.4 0.9
+              }
+              texture ImageTexture {
+                url [
+                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Cruz.png?raw=true"
+                ]
+              }
+            }
+            geometry Box {
+              size IS size_box
+            }
+          }
+        ]
+        boundingObject Box {
+          size IS size
+        }
+       }
+       
+        # Circulo
+       Solid {
+        translation IS circulo_transl
+        name "Circulo"
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.3 0.4 0.9
+              }
+              texture ImageTexture {
+                url [
+                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Circulo.png?raw=true"
+                ]
+              }
+            }
+            geometry Box {
+              size IS size_box
+            }
+          }
+        ]
+        boundingObject Box {
+          size IS size
+        }
+       }
+       # Estrela
+       Solid {
+        translation IS estrela_transl
+        name "Estrela"
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.3 0.4 0.9
+              }
+              texture ImageTexture {
+                url [
+                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Estrela_ficaclaro.png?raw=true"
+                ]
+              }
+            }
+            geometry Box {
+              size IS size_box
+            }
+          }
+        ]
+        boundingObject Box {
+          size IS size
+        }
+       }
+    ]
+  }
+}

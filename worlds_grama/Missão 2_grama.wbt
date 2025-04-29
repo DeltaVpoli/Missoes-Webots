@@ -1,0 +1,54 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/geometries/protos/Extrusion.proto"
+EXTERNPROTO "../protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "../protos/curva.proto"
+EXTERNPROTO "../protos/TRELIÇAS_MISSAO2.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.2619225396177915 0.3457958444854146 -0.9010115521883089 1.3980878774719756
+  position -1.5194388181321914 19.337282806877376 11.184279939830251
+}
+TexturedBackground {
+  texture "noon_park_empty"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0.68 -0.05
+  floorSize 8 15
+  floorAppearance Parquetry {
+    type "dark strip"
+    colorOverride 0 1 0
+  }
+}
+DEF FlightArea Floor {
+  rotation 0 0 1 1.5707963267948966
+  size 200 200
+  tileSize 1 1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/textures/grass.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+Solid {
+  translation -0.53 0 0
+  name "solid(1)"
+}
+curva {
+  translation 3.01222 5.05642 -1.08671e-05
+  rotation 0.2810839910810645 -0.6785979784677472 -0.6785989784677153 2.59356
+}
+TRELIÇAS_MISSAO2 {
+}

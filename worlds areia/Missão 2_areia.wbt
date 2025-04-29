@@ -1,0 +1,49 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "../protos/curva.proto"
+EXTERNPROTO "../protos/TRELIÇAS_MISSAO2.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.24246066667443222 0.3103185485307703 -0.9191927020780495 1.4089947971150036
+  position -2.9477314161409973 20.535711110844908 12.00912745471293
+}
+TexturedBackground {
+  texture "noon_park_empty"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0.68 -0.05
+  floorSize 8 15
+  floorAppearance Parquetry {
+    type "dark strip"
+    colorOverride 0 1 0
+  }
+}
+DEF FlightArea Floor {
+  rotation 0 0 1 1.5707963267948966
+  size 200 200
+  tileSize 1 1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://github.com/cyberbotics/pit-escape-competition/blob/main/worlds/textures/fine_grained_sand.jpg?raw=true"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+curva {
+  translation 3.01222 5.05642 -1.08671e-05
+  rotation 0.2810839910810645 -0.6785979784677472 -0.6785989784677153 2.59356
+}
+TRELIÇAS_MISSAO2 {
+}

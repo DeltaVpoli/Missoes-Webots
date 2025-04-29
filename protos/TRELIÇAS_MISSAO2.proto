@@ -1,0 +1,87 @@
+#VRML_SIM R2025a utf8
+
+PROTO TRELIÇAS_MISSAO2 [
+
+  field SFVec3f trave1_transl -0.1 0 1
+  field SFVec3f trave2_transl -2.1 0 1
+  field SFVec3f size_trelica 0.3 0.3 2
+  field SFVec3f size_bouncing 0.3 0.3 2 
+  
+  field SFVec3f circulo_transl 3.5 5 0.0
+  field SFVec3f size_box 1 1 0.001
+
+
+]
+{
+  Solid {
+    children [
+
+      # Trave da esquerda 
+      Solid {
+        translation IS trave1_transl
+        name "trave_1"
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.6 0.6 0.6
+                #metalness 1
+              }
+            }
+            geometry Box {
+              size IS size_trelica
+            }
+          }
+        ]
+        boundingObject Box {
+          size IS size_bouncing
+        }
+      }
+
+      # Trave da direita 
+      Solid {
+        translation IS trave2_transl
+        name "trave_2"
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.6 0.6 0.6
+               # metalness 1
+                #roughness 0.1
+              }
+            }
+            geometry Box {
+              size IS size_trelica
+            }
+          }
+        ]
+        boundingObject Box {
+          size IS size_bouncing
+        }
+      }
+      
+      Solid {
+        translation IS circulo_transl
+        name "Circulo"
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.3 0.4 0.9
+              }
+              texture ImageTexture {
+                url [
+                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Circulo.png?raw=true"
+                ]
+              }
+            }
+            geometry Box {
+              size IS size_box
+            }
+          }
+        ] 
+       }
+    ]
+  }
+}
