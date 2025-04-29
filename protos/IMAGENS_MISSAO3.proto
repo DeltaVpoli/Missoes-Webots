@@ -30,7 +30,7 @@ PROTO IMAGENS_MISSAO3 [
               }
               texture ImageTexture {
                 url [
-                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Triangulo_ficaclaro.png?raw=true"
+                  "https://github.com/DeltaVpoli/Missoes-Webots/blob/master/Formas/Triangulo.png?raw=true"
                 ]
               }
             }
@@ -56,7 +56,7 @@ PROTO IMAGENS_MISSAO3 [
               }
               texture ImageTexture {
                 url [
-                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Quadrado.png?raw=true"
+                  "https://github.com/DeltaVpoli/Missoes-Webots/blob/master/Formas/Quadrado.png?raw=true"
                 ]
               }
             }
@@ -82,7 +82,7 @@ PROTO IMAGENS_MISSAO3 [
                       }
                   texture ImageTexture {
                     url [
-                      "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Casa_ficaamarelo.png?raw=true"
+                      "https://github.com/DeltaVpoli/Missoes-Webots/blob/master/Formas/Casa.png?raw=true"
                     ]
                   }
           }
@@ -110,7 +110,7 @@ PROTO IMAGENS_MISSAO3 [
               }
               texture ImageTexture {
                 url [
-                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Pentagono_corhexag.png?raw=true"
+                  "https://github.com/DeltaVpoli/Missoes-Webots/blob/master/Formas/Pentagono.png?raw=true"
                 ]
               }
             }
@@ -136,7 +136,7 @@ PROTO IMAGENS_MISSAO3 [
               }
               texture ImageTexture {
                 url [
-                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Hexagono.png?raw=true"
+                  "https://github.com/DeltaVpoli/Missoes-Webots/blob/master/Formas/Hexagono.png?raw=true"
                 ]
               }
             }
@@ -162,7 +162,7 @@ PROTO IMAGENS_MISSAO3 [
               }
               texture ImageTexture {
                 url [
-                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Cruz.png?raw=true"
+                  "https://github.com/DeltaVpoli/Missoes-Webots/blob/master/Formas/Cruz.png?raw=true"
                 ]
               }
             }
@@ -188,7 +188,7 @@ PROTO IMAGENS_MISSAO3 [
               }
               texture ImageTexture {
                 url [
-                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Circulo.png?raw=true"
+                  "https://github.com/DeltaVpoli/Missoes-Webots/blob/master/Formas/Circulo.png?raw=true"
                 ]
               }
             }
@@ -213,7 +213,7 @@ PROTO IMAGENS_MISSAO3 [
               }
               texture ImageTexture {
                 url [
-                  "https://github.com/Gabiruga/Miss-es-drone-/blob/master/Estrela_ficaclaro.png?raw=true"
+                  "https://github.com/DeltaVpoli/Missoes-Webots/blob/master/Formas/Estrela.png?raw=true"
                 ]
               }
             }
