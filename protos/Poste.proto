@@ -12,7 +12,7 @@ PROTO Poste [
 %<
 // Setting object size constant
 const height = 2.5;
-const radius = 0.05;
+const radius = 0.10;
 // Predefined color set
 const color = fields.color.value;
 let color_str = "0 0 0";
